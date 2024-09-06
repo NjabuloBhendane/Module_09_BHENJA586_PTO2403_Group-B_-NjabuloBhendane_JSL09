@@ -38,3 +38,7 @@ document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {
  } 
     
 setInterval(getCurrentTime, 1000)
+
+navigator.geolocation.getCurrentPosition(position => {
+    console.log(position)
+});
